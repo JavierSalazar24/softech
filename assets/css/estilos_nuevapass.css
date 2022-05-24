@@ -1,0 +1,232 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #034975;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #033250;
+}
+.row {
+  box-shadow: 5px 5px 10px 6px rgba(0, 0, 0, 0.068);
+  border-radius: 8px;
+  width: 80%;
+  margin: auto;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.form-control:focus {
+  border-color: #0367a6;
+  box-shadow: none;
+  background: transparent;
+}
+
+.divOjo {
+  width: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.icono,
+.icono2 {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  right: 0;
+  outline: 0 !important;
+}
+
+.icono.active {
+  color: #555;
+}
+
+.descripcion {
+  display: flex;
+  justify-content: center;
+}
+
+/* Password strange */
+.input_boton {
+  display: flex;
+}
+.clave {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.strength_wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 100% !important;
+}
+.formulario .grupo-input .icono2 {
+  position: absolute;
+  width: 60px;
+  height: 46px !important;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 18px;
+  color: var(--color-texto);
+  top: 0;
+  right: 0;
+  outline: 0;
+  margin: auto;
+}
+.strength_meter {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.t_strength_meter {
+  display: block;
+  margin-top: 5px;
+}
+
+.button_strength {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 13px;
+  display: block;
+}
+
+.strength_meter div {
+  width: 0%;
+  height: 34px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.strength_meter div p {
+  position: absolute;
+  right: 10px;
+  color: #4d4d4d;
+  font-size: 13px;
+  padding-right: 30px;
+}
+
+.veryweak {
+  background-color: #ff7979;
+  width: 35% !important;
+}
+.weak {
+  background-color: #fda068;
+  width: 50% !important;
+}
+.medium {
+  background-color: #ffe560;
+  width: 75% !important;
+}
+.strong {
+  background-color: #9bf47d;
+  width: 100% !important;
+}
+
+.veryweak p,
+.weak p,
+.medium p,
+.strong p {
+  padding: 5px 0px;
+  text-align: center;
+}
+/* Styles for verification */
+.pswd_info {
+  position: absolute;
+  width: 65%;
+  padding: 15px;
+  background: #fefefe;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px #ccc;
+  border: 1px solid #f1f7e7;
+  display: none;
+  z-index: 1000;
+  top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  /* background-color: #f5f5f5; */
+  background-color: #f7f6f2;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.pswd_info:before,
+.pswd_info:after {
+  position: absolute;
+  bottom: 100%;
+  content: "";
+  left: 0;
+  right: 0;
+  width: 0px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pswd_info:before {
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid #f1f7e7;
+  border-left: 17px solid transparent;
+}
+
+.pswd_info:after {
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid #f7f6f2;
+  border-left: 16px solid transparent;
+}
+
+.pswd_info h4 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1em;
+  font-size: 0.7em;
+}
+
+.pswd_info ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.pswd_info ul li {
+  visibility: visible !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  line-height: 24px;
+  font-size: 0.7em;
+  /* padding-left: 10px !important; */
+}
+
+.pswd_info .invalid {
+  background: url(images/invalid.png) no-repeat 0 50%;
+  color: #ff0004;
+}
+.pswd_info .valid {
+  background: url(images/valid.png) no-repeat 0 50%;
+  color: #26881d;
+}

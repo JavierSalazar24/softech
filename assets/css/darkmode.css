@@ -1,0 +1,205 @@
+.switch {
+  background: orange;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: 0 !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 11px;
+  left: 20px;
+  margin-bottom: 20px !important;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 1px;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background: #343d5b;
+  color: #000;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  background: 0 0;
+  color: #fff;
+}
+.switch i {
+  font-size: 13px;
+}
+body.dark {
+  background: #474747 !important;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+body.dark header {
+  background: #474747 !important;
+  box-shadow: rgba(114, 114, 114, 0.35) 0px 5px 15px !important;
+}
+body.dark header a:hover,
+body.dark #contact #csubmit,
+body.dark #newsletterForm #csubmit,
+body.dark .navbar a:hover,
+body.dark .navbar .active,
+body.dark .navbar .active:focus,
+body.dark .navbar li:hover > a,
+body.dark #latest-posts .card a,
+body.dark .inner-page .card a,
+body.dark .breadcrumbs ol li a,
+body.dark .rounded ol li a,
+body.dark .rounded ol,
+body.dark .contenedor_sitemap a,
+body.dark .inner-page .author a,
+body.dark .section-title a,
+body.dark p a,
+body.dark header li.me-4 .login {
+  color: #008fe8;
+}
+body.dark header li.me-4 .login,
+body.dark #contact #csubmit:hover,
+body.dark #newsletterForm #csubmit:hover {
+  border-color: #008fe8;
+}
+body.dark header li.me-4 .login:hover,
+body.dark #contact #csubmit:hover,
+body.dark #newsletterForm #csubmit:hover {
+  color: #fff;
+  background-color: #008fe8;
+}
+body.dark #header .container nav li.dropdown ul {
+  background: #474747 !important;
+}
+body.dark #team,
+body.dark #latest-posts,
+body.dark .inner-page .card {
+  background: #474747 !important;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+body.dark #contact,
+body.dark #latest-posts .card,
+body.dark #team .member,
+body.dark .inner-page .rounded,
+body.dark .breadcrumbs {
+  -webkit-transition: 0.5s ease all !important;
+  transition: 0.5s ease all !important;
+  background: rgb(68, 68, 68) !important;
+}
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark p,
+body.dark ul,
+body.dark label,
+body.dark header a,
+body.dark #contact a,
+body.dark #contact i,
+body.dark #contactForm .checkbox,
+body.dark #latest-posts .card,
+body.dark #team .member h4,
+body.dark #team .member span,
+body.dark input,
+body.dark .breadcrumbs ol li,
+body.dark .breadcrumbs ol li:before,
+body.dark #contactForm textarea,
+body.dark .footer .link-footer,
+body.dark #noticia a,
+body.dark a.agregar_autor {
+  color: #fff;
+}
+body.dark #team .member p,
+body.dark #team .member .social a,
+body.dark #perfilForm .perfil_usuario {
+  color: rgb(197, 197, 197);
+}
+body.dark .label-control {
+  position: absolute;
+  top: 0.87rem;
+  left: 1.375rem;
+  color: rgb(228, 228, 228);
+  opacity: 1;
+  font: 400 0.875rem/1.375rem "Montserrat", sans-serif;
+  cursor: text;
+  transition: all 0.2s ease;
+}
+body.dark .label-control.top {
+  top: 0.125rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+body.dark #newsletter {
+  background: #353535;
+}
+body.dark #newsletter .cont-newsletter {
+  background: #033250;
+}
+body.dark .divider {
+  background: #0085d8;
+  fill: #0085d8;
+  color: #000 !important;
+}
+body.dark .text-divider {
+  background: #686868;
+}
+body.dark .text-divider:before {
+  background: #0085d8;
+}
+body.dark #perfilForm input[disabled],
+body.dark #perfilForm input[readonly] {
+  color: rgb(150, 150, 150);
+}
+body.dark #perfilForm input,
+body.dark #newsletter input[type="email"],
+body.dark #newsletter input[type="text"],
+body.dark input[type="date"] {
+  color: #000;
+}
+body.dark .inner-page .card {
+  border-color: rgb(112, 112, 112);
+}
+body.dark.perfil input,
+body.dark.perfil select,
+body.dark.perfil textarea {
+  color: rgb(138, 138, 138);
+}
+body.dark .mobile-nav-toggle {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+}
+body.dark .navbar-mobile ul {
+  background-color: #474747;
+}
+body.dark .navbar-mobile a,
+body.dark .navbar-mobile a:focus {
+  color: #d3d3d3;
+}
+body.dark #newsletters {
+  background: #474747;
+}

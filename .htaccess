@@ -1,0 +1,20 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+ 
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.softech.cesenas.com [NC]
+RewriteRule (.*) https://softech.cesenas.com/ [R=301,L,QSA]
+
+Options -Indexes
+
+ErrorDocument 403 https://softech.cesenas.com/error403
+ErrorDocument 404 https://softech.cesenas.com/error404
+ErrorDocument 500 https://softech.cesenas.com/error500
+ErrorDocument 503 https://softech.cesenas.com/error503
